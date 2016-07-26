@@ -11,7 +11,7 @@ function [r_S_invf] = fun_r_S_inv(r_S, w_S, L)
         parfor j=i:(L+1)
             sum1 = sum1 + w_S(j) * (r_S(i) - r_S(j));
         end
-        r_S_invf(i,1) =r_S(i)+ sum1;
+        r_S_invf(i,1) = r_S(i)+ sum1;
     end
     
     % analog zu: i= 1 ... L
